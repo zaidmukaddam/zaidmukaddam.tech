@@ -13,7 +13,7 @@ const defaultMeta = {
   url: 'https://zaidmukaddam.tech',
   type: 'website',
   robots: 'follow, index',
-  image: '',
+  image: 'android-chrome-96x96.png',
 };
 
 const Seo = ({ title }: SeoProps) => {
