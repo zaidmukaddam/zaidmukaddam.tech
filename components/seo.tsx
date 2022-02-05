@@ -8,7 +8,7 @@ type SeoProps = {
 const defaultMeta = {
   title: 'Zaid Mukaddam',
   description:
-    'A medium or blog by Zaid for expressing opinions about website development, software engineering, etc.',
+    'A medium or blog by Zaid for expressing opinions about website development, cyber security, etc.',
   siteName: 'zaidmukaddam.tech',
   url: 'https://zaidmukaddam.tech',
   type: 'website',
