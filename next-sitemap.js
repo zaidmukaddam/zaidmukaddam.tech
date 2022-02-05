@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'http://localhost:3000/',
+  siteUrl: 'https://zaidmukaddam.tech/',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
