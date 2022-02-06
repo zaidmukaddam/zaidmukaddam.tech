@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   });
 
   return (
-    <ThemeProvider attribute='class' defaultTheme='dark' enableSystem={false}>
+    <ThemeProvider attribute='class' defaultTheme='dark' enableSystem={true}>
       <Header />
       <Component {...pageProps} />
       <Footer />
