@@ -10,6 +10,6 @@ type Asset = {
 
 export type TechStacksObj = {
     name: string
-    url: string | null
+    url: string
     img: Asset
 }

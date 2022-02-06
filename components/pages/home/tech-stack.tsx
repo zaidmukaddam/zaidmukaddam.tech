@@ -18,7 +18,7 @@ const TechStack = ({ dataTechStacks }: TechStackProps) => {
         <div className='mt-8 grid grid-cols-2 sm:grid-cols-4 gap-6'>
           {dataTechStacks.map((item) => (
             <div key={item.name}>
-              <TechStackCard label={item.name} img={item.img?.url} />
+              <TechStackCard label={item.name} img={item.img?.url} techUrl={item.url} />
             </div>
           ))}
         </div>
