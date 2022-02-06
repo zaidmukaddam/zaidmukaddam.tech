@@ -16,11 +16,9 @@ const TooltipContent = ({ type }: TooltipContentProps) => {
         <p>
           See my projects on <p className={colorLink}>Github</p>
         </p>
-      ) : type === 'twitter' ? (
+      ) : type === 'instagram' ? (
         <p>
-          Sometimes i post my thoughts on
-          <br />
-          Follow me on <span className={colorLink}>twitter</span>
+          Sometimes i post my thoughts on <span className={colorLink}>instagram</span>
         </p>
       ) : (
         <p>

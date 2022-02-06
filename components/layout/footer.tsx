@@ -2,7 +2,7 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiOutlineMail,
-  AiOutlineTwitter,
+  AiOutlineInstagram,
 } from 'react-icons/ai';
 import { Tooltip } from 'react-tippy';
 import TooltipContent from '../tooltip/tooltip-content';
@@ -50,9 +50,9 @@ const linkSocial = [
     logo: <AiFillLinkedin />,
   },
   {
-    name: 'twitter',
-    link: 'https://twitter.com/zaidmukaddam',
-    logo: <AiOutlineTwitter />,
+    name: 'instagram',
+    link: 'https://instagram.com/zaidmukaddam.c',
+    logo: <AiOutlineInstagram />,
   },
 ];
 
