@@ -11,7 +11,7 @@ const TechStack = ({ dataTechStacks }: TechStackProps) => {
       <div className='px-8 xl:px-0 pt-4 xl:w-[68rem] mx-auto'>
         <div className='flex flex-col'>
           <h2 className='text-4xl font-bold'>Current Tech Stack</h2>
-          <p className='text-[#525252] mt-4'>
+          <p className='text-stone-400 mt-4'>
             Here is my tech stack I use to develop amazing websites and projects!
           </p>
         </div>
