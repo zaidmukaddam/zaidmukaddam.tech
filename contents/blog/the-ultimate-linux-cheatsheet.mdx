@@ -1,0 +1,702 @@
+---
+title: The Ultimate Linux Cheatsheet
+description: From basic to advanced level ;)
+publishedAt: '2022-02-08'
+---
+
+# What is Linux?  
+From desktops to supercomputers, Linux is everywhere! You must have heard of it at least once, right? But the question is, what is **Linux**?
+
+Just like Windows and Mac, it is an operating system and has been around since the 1990s. Linux is basically a Unix-like, Kernal based, fully-memory protected, multitasking operating system. It is open-source software that runs on a wide range of hardware, from PCs to even Macs.
+
+# What are Linux Commands?
+A command is a program that interacts with the kernel to provide the environment and perform the functions called for by the user. A command can be:
+
+- a built-in shell command
+
+- an executable shell file, known as a shell script
+
+- a source compiled, object code file.
+
+Here are a lot of basic Linux commands you can try! I wanted to write "some of" but these are too many to be classified as "some".
+
+**Disclaimer**: Some commands may not work for you correctly due to issues like missing packages, differences in versions, etc. I did list some alternatives, but if they don't work too, then I'll just tell you what our course instructor tells us to do: **Google it**!
+
+# 1. history
+Just type "history" in the terminal and it will show you a list of all commands you have used.
+
+# 2. clear
+Just type "clear" in the terminal and the terminal will be cleared.
+
+# 3. up OR down key
+Use these keys to move back and forth between the commands you have previously used.
+
+# 4. pwd
+It is a short form for the present working directory. It shows the folder you are currently working in.
+
+# 5. man man
+This command shows a manual of all the commands.
+
+You can use:
+
+man command
+
+to get information about a particular command.
+
+# 6. ls
+This command shows all the directories and files in the pwd.
+
+# 7. ls -al
+This command prints all the additional information of all files and directories.
+
+# 8. ls -R
+This command prints out the sub-directories of a directory too.
+
+# 9. ls -a
+This command prints out the hidden files.
+
+# 10. dir
+This command prints out all available directories in the pwd.
+
+# 11. cd
+It is used to change directories. Whenever you open the terminal, the current directory would be home.
+
+**For example:**
+
+The command
+
+cd Desktop
+
+will let you enter the Desktop. Now if you check the pwd, it will be Desktop.
+
+**Just use:**
+
+cd
+
+to get back to the home directory.
+
+# 12. mkdir
+This command makes a new directory.
+
+**For example:**
+
+mkdir Linux
+
+This command will make a new directory named Linux in the pwd.
+
+# 13. sudo -i OR sudo -s OR sudo su
+Use one of these 3 commands login as root user.
+
+# 14. exit OR logout
+You can logout or exit the root.
+
+# 15. rm FileName.txt
+Use this command to remove/del file from a directory.
+
+# 16. rmdir DirectoryName
+It is used to remove/del an empty directory.
+
+# 17.  touch
+It is used to create a new file or to change the timestamp of an existing file.
+
+# 18. stat file.txt
+Use this command to check details of any file.
+
+# 19. cat > file.txt
+It creates and adds data in a file. Use CTRL+d after you finish adding data to save the file.
+
+# 20. cat file.txt
+It shows the contents of the file.
+
+# 21. cat file1.txt file2.txt > file.txt3
+It adds the data of existing files, "file1" and "file2", to a new file, "file3".
+
+# 22. cp
+You can copy a file or a folder using this command.
+
+Use:
+
+cp file.txt Directory
+
+to copy a file to your desired directory. Please note that in order to do so, your pwd must be the directory the file is currently in.
+
+Use:
+
+cp FolderName -r Directory
+
+to copy a folder/directory to another directory.
+
+# 23. mv
+It will move files inside your system.
+
+**Syntax:**
+
+mv FileName.txt Directory
+
+# 24. head
+This command prints the first ten lines of a file.
+
+**Syntax:**
+
+head FileName.txt
+
+# 25. tail
+This command prints the last ten lines of a file.
+
+**Syntax:**
+
+tail FileName.txt
+
+# 26. uname
+This command gives the name of your Linux.
+
+# 27. uname -a
+This command gives detailed information about your Linux.
+
+# 28. wget
+Use:
+
+wget url
+
+to download anything from the internet.
+
+# 29. apt -get OR apt
+Use:
+
+sudo apt install PackageName
+
+or
+
+sudo apt -get install PackageName
+
+to install any package .
+
+# 30. remove
+Use:
+
+sudo apt remove PackageName
+
+to remove/uninstall any package.
+
+# 31. grep
+You can search for a pattern in which specific words lie.
+
+cat file.txt | grep hi
+
+This command will search for "hi" in the text file mentioned and will highlight where it found "hi".
+
+# 32. ps
+It gives the list of current processes.
+
+# 33. gzip
+It is used to zip any file.
+
+**Syntax:**
+
+gzip FileName.txt
+
+# 34. gunzip
+It is used to unzip any file.
+
+**Syntax:**
+
+gunzip FileName.txt
+
+# 35. compress
+It is used to compress data.
+
+# 36. uncompress
+It is used to uncompress data.
+
+# 37. zip
+It is used to compress a file to .zip file.
+
+# 38. unzip
+It is used to uncompress a file.
+
+# 39. hostname
+It is used to print hostname on the terminal.
+
+# 40. ping
+It is used to check connectivity to a server.
+
+e.g. ping [youtube.com](https://www.youtube.com)
+
+will ping to youtube and then print the response time.
+
+# 41. w
+This command displays the user details that are currently logged in the system.
+
+# 42. cal
+It displays the calendar for the current month.
+
+# 43. date
+It displays the date and time.
+
+# 44. date -u
+It displays the date and universal time.
+
+# 45. whoami
+It displays the current user name.
+
+# 46. echo
+To understand this, let's see an example:
+
+echo name
+
+This command will return "name" as the output.
+
+# 47. wc
+It counts the number of lines, number of words, and number of characters. Then it displays the result in the same sequence.
+
+**Syntax:**
+
+wc file.txt
+
+# 48. wc -l
+It counts and displays the number of lines of a file.
+
+**Syntax:**
+
+wc -l file.txt
+
+# 49.  wc -w
+It counts and displays the number of words of a file.
+
+**Syntax:**
+
+wc -w file.txt
+
+# 50. CTRL+shift+c
+Used for copying.
+
+# 51. CTRL+shift+v
+Used for pasting.
+
+# 52. sudo
+Using sudo allows a normal user to execute a command with root privilege.
+
+# 53. sudo get apt update
+It is used to update the whole system.
+
+# 54. locate
+Let's see an example to understand it's function.
+
+locate hi
+
+This command will list out all files or paths with "hi" in their path or file names.
+
+# 55. locate -c
+Let's see an example to understand it's function.
+
+locate hi
+
+This command will list out the number of files with "hi" in their path or file names.
+
+# 56. ls -l
+This command shows a list of all users along with their default permissions.
+
+# 57. sort
+It sorts a file alphabetically.
+
+# 58. uniq
+It removes duplicate lines from a sorted file.
+
+# 59. sleep
+Produces a delay for a specified amount of time.
+
+# 60. diff
+This command shows differences between files.
+
+**Syntax:**
+
+diff file1.txt file2.txt
+
+# 61. cut
+It removes sections from each line of files.
+
+# 62. cmp
+It compares two files.
+
+**Syntax:**
+
+cmp file1.txt file2.txt
+
+# 63. whereis
+It locates the binary and man page files for a command.
+
+# 64. which
+It shows full path of where commands reside.
+
+# 65. md5sum
+It prints the MD5 Checksum.
+
+# 66. mv to rename a file
+Use:
+
+mv abc.txt def.txt
+
+to rename a file. Here the name of the file, abc, is changed to def.
+
+# 67. echo to append text
+Use:
+
+echo "Enter your text here" >> file.txt
+
+to append any text to the end of your specified file.
+
+<hr />
+
+# File Editors in Linux
+Here are 4 file editors in Linux:
+
+# 68. emacs
+This command opens a full-screen editor.
+
+# 69. pico
+This command opens a simple editor.
+
+# 70. gedit
+This command opens a GUI text editor.
+
+# 71. vim OR vi
+You can use either command to open vim.
+
+- The command "i" will let you open insert mode.
+
+- To exit vim: Press esc keyt + :q
+
+- To save file: Press esc keyt + :w FileName.txt
+
+<hr />
+
+# Creating and Setting Passwords for User and Groups  
+By using the following commands, you can create and set passwords for users and groups!
+
+# 72. useradd OR adduser
+Either of these may work for you. They add another user in the system. Execute this command while logged into root. If not in root, use sudo before it.
+
+**Syntax:**
+
+useradd NewUser
+
+# 73. passwd
+It is used to set password for a user. Works only when you are logged in as root or use sudo before it.
+
+**Syntax:**
+
+passwd NewUser
+
+# 74. userdel
+It is used to delete a user. Works only when you are logged in as root or use sudo before it.
+
+**Syntax:**
+
+userdel NewUser
+
+# 75. cat /etc/passwd
+It shows a list of all ubuntu users. Works only when you are logged in as root.
+
+# 76. groupadd
+It is used to add a group. Works only when you are logged in as root.
+
+# 77. gpasswd
+It is used to set password for a group. Works only when you are logged in as root.
+
+# 78. Adding users to a group
+The following command creates a new user and a new group. Then adds that user to the group.
+
+**Syntax:**
+
+sudo adduser UserName GroupName
+
+# 79. groupdel
+It is used to delete a group.
+
+**Syntax:**
+
+groupdel GroupName OR sudo groupdel GroupName
+
+# 80. Add existing user to an existing group
+Use the following command to perform this task:
+
+sudo usermod -a -G GroupName UserName
+
+# 81. compgen -g OR cat /etc/group
+Either of them can be used to see the list of all users and groups.
+
+# 82. Granting sudo privilege to a new user
+After you create a new user via the terminal, that user would not be able to do anything even while using sudo. That is because the user does not have the sudo privilege.
+
+Use this command to add that user to the group of sudo users or in other words, to grant that user the sudo privilege:
+
+sudo usermod -aG sudo UserName
+
+<hr />
+
+# Setting Ownerships and Permissions for Files/Directories
+By using the following commands, you can set ownership and permissions for files/directories.
+
+# 83. Setting ownership of files
+Login to the user who created the file whose ownership you want to modify. For example, user Ayesha created the file, abc.txt. You want to modify the ownership of abc.txt. Now login to Ayesha. You want to make another user, Sahar, the owner too. Use the following command to achieve this:
+
+sudo chown Sahar abc.txt
+
+# 84. Setting file/folder permissions
+There are two types of permissions;
+
+**1. Alphabetic:**
+
+- read (r)
+
+- write (w)
+
+- execute (x)
+
+**2. Numeric:**
+
+- write: 2
+
+- read: 4
+
+- execute: 1
+
+- no permission: 0
+
+Alphabetic permissions are quite simple. Let's understand the numeric permissions.
+
+**For example:**
+
+chmod 561 abc.txt
+
+We use chmod to set permissions. Here we are setting permission on abc.txt
+
+You might be thinking, why are there 3 numbers?
+
+That is because:
+
+- 5 is the permission for user.
+
+- 6 is the permission for group.
+
+- 1 is the permission for others.
+
+When setting permissions we do it for the above-mentioned 3 types.
+
+Here, another question might come to your mind; how were those numbers calculated????
+
+- We granted the read(4) and execute(1) permissions to user. Therefore 4+1 =5.
+
+- We granted the read(4), write(2), and execute(1) permissions to group. Therefore 4+2+1 =6.
+
+- To others, we only granted the execute permission, hence the 1.
+
+<hr />
+
+# File System Management Commands
+Here are some commands used for filesystem management!
+
+# 85. badblocks
+This command is used to search for bad blocks (block of memory which has been corrupted and can no longer be used reliably) in your linux.
+
+# 86. df
+It shows the free disk space on one or more filesystems.
+
+# 87. du
+It shows how much disk space a directory and all it's files contain.
+
+# 88. fsck
+It checks the filesystem. Do not run this command on a mounted filesystem.
+
+**Syntax:**
+
+fsck filesystem
+
+# 89. sync
+This command sunchronizes data on disk with memory. It only writes the buffered data to the disk.
+
+# 90. mount
+It is used to mount a filesystem.
+
+**Syntax:**
+
+mount filesystem
+
+# 91. umount
+It is used to unmount a filesystem.
+
+**Syntax:**
+
+unmount filesystem
+
+# 92. Fg
+It is used to continue a program which was stopped and bring it to the foreground. For example, you stopped a music player, p, with the command Ctrl+z. In order to let it continue, write the command; fg p.
+
+Syntax:
+
+fg taskname
+
+# 93. op
+It informs the user about all the running processes on the Linux.
+
+# 94. PS
+It stands for ‘Process Status’. This is similar to the “Task Manager” that pop-ups in a Windows Machine when we use Ctrl+Alt+Del. It is similar to the “top” command but the information displayed is different.
+
+- To check all the processes running under a user:  
+ps ux
+
+- To check the process status of a single process:  
+ps PID
+
+# 95.  Kill
+It is used to terminate any running processes on a Linux machine. PID (process id) of the process you want to kill must be known.
+
+- You can find PID by this command:  
+pidof ProcessName
+
+- You can kill a process by this command:  
+kill PID  
+
+# 96. NICE
+Running a lot of processes at a time can slow down the speed of some high priority processes and result in poor performance. To avoid this situation, you can tell your machine to prioritize processes as per your requirements.
+
+This priority is called Niceness in Linux (has a value between -20 to 19). The lower the Niceness index, the higher would be a priority given to that task. The default value of all the processes is 0.
+
+- To start a process with a niceness value other than the default value use the following syntax:  
+nice -n 'Nice value' ProcessName
+
+- If there is some process already running on the system, then you can ‘Renice’ its value using syntax.  
+renice 'nice value' -p 'PID'
+
+<hr />
+
+# Network Management Commands
+Following commands are used to manage networks.
+
+# 97. ifconfig
+ifconfig stands for interface configurator. It is used to initialize an interface, configure it with an IP address, and enable or disable it. It is also used to display the route and the network interface. Basic information displayed upon using ifconfig; IP address, MAC address and MTU (Maximum Transmission Unit). This is how we can get the IP address of 3 networks; Ethernet, local network, and WLAN.
+
+- ifconfig eth0
+- ifconfig wlan0
+- ifconfig lo
+
+# 98. ip
+This is the latest and updated version of ifconfig command. “ip a” gives the details of all networks like ifconfig. “ip addr” can also be used to get the details of a specific interface. This is how we can get the IP address of 3 networks; Ethernet, local network, and WLAN.
+
+- ip a show eth0
+- ip a show wlan0
+- ip a show lo
+
+# 99. ip link
+This command is used for configuring, adding, and deleting network interfaces. Use ip link show command to display all network interfaces on the system.
+
+# 100. iftop
+This command is used in traffic monitoring. You can view the ports using the -P option in command like this:
+
+- sudo iftop -P
+You can use the -B command to get the data in bytes, instead of bits (which is shown by default).
+
+- iftop -B
+
+# 101. tracepath
+Linux tracepath is similar to traceroute command. It is used to detect network delays. However, it doesn't require root privileges. It is installed in Ubuntu by default.
+
+It traces the route to the specified destination and identifies each hop in it. If your network is weak, it recognizes the point where the network is weak.
+
+- tracepath [google.com](https://www.google.com)
+
+# 102. traceroute
+It is used to troubleshoot the network. It detects the delay and determines the pathway to your target. It provides the names and identifies every device on the path, follows the route to the destination and determines where the network latency comes from and reports it.
+
+- traceroute [google.com](https://www.google.com)
+
+To avoid the reverse DNS lookup, add -n in the command syntax.
+
+- traceroute -n [google.com](https://www.google.com)
+
+The output indicates the network delays. The asterisks shown in the output indicates a potential problem in reaching that host. They indicate the packet loss during communication to the network.
+
+Generally, the traceroute command sends UDP packets. It can as well send TCP or ICMP packets. To specifically send in ICMP, use this command:
+
+- sudo traceroute -I [google.com](https://www.google.com)
+
+To send a variant of TCP, use this command:
+
+- sudo traceroute -T [google.com](https://www.google.com)
+
+# 103. host
+Linux host command displays the domain name for a given IP address and IP address for a given hostname. It is also used to fetch DNS lookup for DNS related query.
+
+host zaidmukaddam.tech
+host 149.77.21.18
+
+You can combine the host command with -t, and get DNS resource records like SOA, NS, A, PTR, CNAME, MX, SRV.
+
+- host -t zaidmukaddam.tech
+
+# 104. mtr
+This command is a combination of ping and the traceroute command. It continuously displays information regarding the packets sent with the ping time of each hop. It is also used to view the network issues.
+
+**Syntax:**
+
+mtr
+
+**Example:**
+
+mtr [google.com](https://www.google.com)
+
+You can use mtr with –report option. It sends 10 packets to each hop that is found on the way.
+
+# 105. whois
+This command is used to fetch all the information related to a website. You can get all the information about a website including the registration and the owner information.
+
+**Syntax:**
+
+whois websiteName
+
+**Example:**
+
+whois [google.com](https://www.google.com)
+
+# 106. ifplugstatus
+This command is used to check if a cable is plugged into the network interface.
+
+- ifplugstatus  
+
+If the output is "link beat detected", this means that the cable is plugged in.
+
+# 107. dnsdomainname
+This command shows the system's dns domain name.
+
+# 108. nisdomainname
+This command is used to show or set the system's NIS/YP domain name.
+
+# 109. arp
+This program lets the user read or modify their arp cache.
+
+# 110. dig
+This command sends domain name query packets to name servers for debugging or testing.
+
+# 111. ifdown
+This command disables a network interface, placing it in a state where it cannot transmit or receive data.
+
+**Syntax:**
+
+ifdown eth0
+
+# 112. ifup
+This command enables a network interface, placing it in a state where it can transmit or receive data.
+
+**Syntax:**
+
+ifup eth0
+
+# 113. showmount
+This command shows mount information for an NFS server.
+
+<hr />
+
+# Conclusion
+Ooops, this turned out to be a very long article😅 But I hope you guys find it useful. Linux may seem tough and scary but deep down, he's a good kid. Just put an effort and you'll surely find these commands and Linux in general easy in no time!
+
+Thanks for reading!
