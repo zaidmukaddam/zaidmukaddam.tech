@@ -76,7 +76,7 @@ const BlogPost = ({
 
   return (
     <>
-      <Seo title={frontmatter.title} />
+      <Seo title={frontmatter.title} description={frontmatter.description} />
       <FloatingButton />
       <section
         className={clsx(

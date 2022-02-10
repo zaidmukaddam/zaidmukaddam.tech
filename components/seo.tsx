@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 
 type SeoProps = {
   title?: string;
+  description?: string;
 };
 
 const defaultMeta = {
@@ -16,7 +17,7 @@ const defaultMeta = {
   image: '/android-chrome-256x256.png',
 };
 
-const Seo = ({ title }: SeoProps) => {
+const Seo = ({ title, description }: SeoProps) => {
   const meta = {
     ...defaultMeta,
   };
@@ -26,13 +27,13 @@ const Seo = ({ title }: SeoProps) => {
   return (
     <Head>
       <title>{title ? `${title} - ${meta.title}` : meta.title}</title>
-      <meta content={meta.description} name='description' />
+      <meta content={description? description : meta.description} name='description' />
       <meta name='robots' content={meta.robots} />
       {/* openGraph */}
       <meta property='og:type' content={meta.type} />
       <meta property='og:site_name' content={meta.siteName} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:title' content={meta.title} />
+      <meta property='og:description' content={description? description : meta.description} />
+      <meta property='og:title' content={title ? `${title} - ${meta.title}` : meta.title} />
       <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter  */}
       <meta name='twitter:card' content='summary_large_image' />
