@@ -114,8 +114,8 @@ cout << "Your number is: " << x; // Display the input value
 
 ⚠️Remember,
 
-- cout is used to show Output and uses the insertion operator `(&gt;&gt;)`
-- cin is used to get User Input and uses the extraction operator `(&lt;&lt;)`
+- cout is used to show Output and uses the insertion operator (&lt;&lt;)
+- cin is used to get User Input and uses the extraction operator (&gt;&gt;)
 
 <hr/>
 
@@ -127,7 +127,7 @@ cout << "Your number is: " << x; // Display the input value
   string myName = "John Doe";
   ```
 
-  To use strings, you must import <string> library.
+  To use strings, you must import &lt;string&gt; library.
 
   ```cpp
   #include <string>
@@ -144,3 +144,221 @@ string myFullName = myName + " " + myLastName;
 cout << myFullName;
 ```
 
+<hr/>
+
+C++ supports the usual logical conditions from mathematics:
+
+- Less than: a &lt; b
+- Less than or equal to: a &lt;= b
+- Greater than: a &gt; b
+- Greater than or equal to: a &gt;= b
+- Equal to: a==b
+- Not Equal to: a != b
+
+**If**
+
+In C++, we use the if statement to specify a block of C++ code to be executed if a condition is true.
+
+```cpp
+if (20 > 18) {
+  cout << "20 is greater than 18";
+}
+```
+
+**Else**
+
+The `else` statement is to specify a block of code to be executed if the condition is `false`.
+
+```cpp
+int time = 20;
+if (time < 18) {
+  cout << "Good day.";
+} else {
+  cout << "Good evening.";
+}
+// Outputs "Good evening."
+```
+
+**Else if**
+
+Use the else if statement to specify a new condition if the first condition is false.
+
+```cpp
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+
+<hr/>
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645781670140/Zz1x8ZY_k.png)
+
+Loops can execute a block of code as long as a specified condition is reached. Loops are handy because they save time, reduce errors, and they make code more readable.
+
+**While Loop**
+
+The while loop loops through a block of code as long as a specified condition is true:
+
+```cpp
+int main() {
+  int i = 0;
+  while (i < 5) {
+    cout << i << "\n" ; //make new lines for each
+    i++; //Add +1.
+  }
+  return 0;
+ /* output - 1
+             2
+             3
+             4
+             5
+   */                      
+}
+}
+```
+
+**The Do/While Loop**
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645781762457/O4H7VhiPC.png)
+
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+```cpp
+int i = 0;
+do {
+  cout << i << "\n";
+  i++;
+}
+while (i < 5);
+```
+
+It means, While you're reading this, your knowledge improves +1. Hope you got it.
+
+**For Loop**
+
+When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop. Think you get $50 for hour if you work till 12.30pm and you always working till 12.30pm. You are sure about it. So you have to use a `for` loop to estimate your payment.
+
+```cpp
+for (bool works = true; works = true; pay = pay+50 ) {
+    cout << pay << "\n";
+}
+//this is not the best way to do it. Just to understand
+```
+
+If you're not sure you work till 12.30pm, you have to use a while loop.
+
+```cpp
+ while (bool works = true) {
+    cout << pay << "\n";
+    pay = pay+50;
+}
+```
+
+**Break and Continue**
+
+The break statement can also be used to jump out of a loop.
+
+```cpp
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    break;
+  }
+  cout << i << "\n";
+}
+```
+
+And the `continue` statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+This example skips the value of 4:
+
+```cpp
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  cout << i << "\n";
+}
+```
+
+That's about loops!
+
+<hr/>
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645781992710/2FCOKYUZf.png)
+
+
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:
+
+```cpp
+string games[4];
+```
+
+We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:
+
+```cpp
+string games[4] = {"Super Mario", "Zelda", "Metroid", "Pokemon"};
+```
+
+**Access the Elements of an Array**
+
+You access an array element by referring to the index number. Note - Array indexes start with 0: [0] is the first element. [1] is the second element, etc.
+
+```cpp
+string games[4] = {"Super Mario", "Zelda", "Metroid", "Pokemon"};
+cout << games[0];
+//Outputs Super Mario
+```
+
+To change an element in an array,
+
+```cpp
+string games[4] =  {"Super Mario", "Zelda", "Metroid", "Pokemon"};
+games[0] = "Overwatch";
+cout << games[0]
+// Outputs Overwatch
+```
+
+<hr/>
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645782209796/RVs__UCGe.png)
+
+Last Part! You're a awesome learner!
+
+C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also create your own functions to perform certain actions.
+
+To create (often referred to as declare) a function, specify the name of the function, followed by parentheses `()`:
+
+```cpp
+void buddyFunction(){
+// code to be executed
+}
+```
+
+**Call a Function**
+
+Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.
+
+To call a function, write the function's name followed by two parentheses () and a semicolon `;`
+
+In the following example, `buddyFunction()` is used to print a text (the action), when it is called:
+
+```cpp
+void buddyFunction(){
+  cout << "I am happy now!"
+}
+int main() {
+  myFunction(); // call the function
+  return 0;
+}
+//Outputs "I am happy now!"
+```
+
+That's it!
+
+Thanks for reading! Don't forget to bookmark this page!
